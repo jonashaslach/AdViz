@@ -26,32 +26,36 @@ body {
 
 label {
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
     text-align: right;
-    width: 300px;
+    width: 320px;
     line-height: 26px;
     margin-bottom: 10px;
 }
 
 input {
     height: 20px;
-    flex: 0 200px;
+    flex: 0 140px;
     margin-left: 10px;
 }
 
 .addnewform {
     padding-top: 10px;
-    width: 320px;
+    width: 340px;
     background-color: rgba(255, 172, 65, 0.42);
     border-style: solid;
     border-color: gray;
     margin: 10px;
 }
 
+.addnewform label select {
+    flex: 0 150px;
+    margin-left: 10px;
+}
+
 .updatedeleteform {
     padding-top: 10px;
-    width: 320px;
+    width: 340px;
     background-color: rgba(255, 172, 65, 0.42);
     border-style: solid;
     border-color: gray;
@@ -88,15 +92,7 @@ input {
 }
 
 .selectfirstbutton {
-    margin: 10px;
-}
-
-.angleleft {
-    margin-left: 20px;
-}
-
-.angleright {
-    margin-right: 20px;
+    margin: 10px 20px;
 }
 
 .mainscreenpersonlistmap {
@@ -105,7 +101,7 @@ input {
 }
 
 .mainscreenpersonlistmapcenter {
-    display: inline-flex;
+    display: flex;
     background-color: rgba(255, 172, 65, 0.42);
     border-style: solid;
     border-color: black;
