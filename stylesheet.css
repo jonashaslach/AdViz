@@ -2,6 +2,10 @@ body {
     font-family: Arial, serif;
 }
 
+#loginfull {
+    display: flex;
+}
+
 .logincontents {
     display: flex;
     flex-direction: column;
@@ -38,6 +42,10 @@ input {
     margin-left: 10px;
 }
 
+#addform {
+    display: none;
+}
+
 .addnewform {
     padding-top: 10px;
     width: 340px;
@@ -50,6 +58,10 @@ input {
 .addnewform label select {
     flex: 0 150px;
     margin-left: 10px;
+}
+
+#updateform {
+    display: none;
 }
 
 .updatedeleteform {
@@ -68,6 +80,14 @@ input {
 
 .updatedeleteitem {
     margin: 10px;
+}
+
+#msfull {
+    display: none;
+}
+
+.mainforms {
+    display: flex;
 }
 
 .mainscreenselectfirstpersonlistmap {
