@@ -8,18 +8,19 @@
 </head>
 <body>
 
-<form>
+<form onsubmit="return false">
     <div class="logincontents" id="loginfull">
         <div class="loginborder">
             <div><h1>AdViz <br> Login</h1></div>
             <div><input id="username" type="text" placeholder="username" required></div>
-            <div><input id="password" type="passwordd" placeholder="password" required></div>
+            <div><input id="password" type="password" placeholder="password" required></div>
             <div>
                 <button class="btns" id="login" onclick="loginFun()">Login</button>
             </div>
         </div>
     </div>
 </form>
+
 
 <h1 id="welcometext"></h1>
 
@@ -46,7 +47,7 @@
         <div class="mainscreenselectfirstpersonlistmap">
             <div class="mainscreenpersonlistmap">
                 <div class="mainscreenpersonlistmapcenter">
-                    <div class="mainscreenpersonlist">
+                    <div class="mainscreenpersonlist" id="mspl">
                         <div class="personlist" onclick="updateFun()"><span>Anna Ahrens</span></div>
                         <div class="personlist" onclick="updateFun()"><span>Berta Behmann</span></div>
                         <div class="personlist" onclick="updateFun()"><span>Clemens Cling</span></div>
@@ -63,10 +64,10 @@
     </div>
 
 
-    <form id="addform">
+    <form id="addform" onsubmit="AddNew();return false">
         <div class="addnewform">
-            <label>First name <input placeholder="Max" required/> </label>
-            <label>Last name <input placeholder="Mustermann" required/></label>
+            <label>First name <input id="firstname" placeholder="Max" required/> </label>
+            <label>Last name <input id="lastname" placeholder="Mustermann" required/></label>
             <label>Street & Number <input placeholder="Musterstraße 1" required/></label>
             <label>ZIP <input placeholder="12345" required/></label>
             <label>City <input placeholder="Musterstadt" required/></label>
@@ -79,13 +80,13 @@
             <!--            <option>normalo</option>-->
             <!--        </select></label>-->
             <label>
-                <button class="btns">Add</button>
+                <button class="btns btn-add">Add</button>
             </label>
         </div>
     </form>
 
 
-    <form id="updateform">
+    <form id="updateform" onsubmit="return false">
         <div class="updatedeleteform">
             <label>First name <input value="Max"/> </label>
             <label>Last name <input value="Mustermann"/></label>
