@@ -185,6 +185,7 @@ function AddNew() {
     newPerson.innerHTML += "<span>" + inputFullname + "</span>"
     document.getElementById("mspl").appendChild(newPerson);
     //newPerson.addEventListener("click", updateFun);
+    document.getElementById("addform").style.display = "none"
 }
 
 
