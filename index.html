@@ -21,7 +21,6 @@
     </div>
 </form>
 
-
 <h1 id="welcometext"></h1>
 
 <div class="mainforms">
@@ -30,10 +29,10 @@
             <div class="selectfirstfullwidth">
                 <div class="selectfirst">
                     <div class="selectfirstbutton">
-                        <button class="btns">Show Mine</button>
+                        <button class="btns" onclick="showMine()">Show Mine</button>
                     </div>
                     <div class="selectfirstbutton">
-                        <button class="btns">Show All</button>
+                        <button class="btns" onclick="showAll()">Show All</button>
                     </div>
                     <div class="selectfirstbutton">
                         <button class="btns" onclick="addFun()">Add New</button>
@@ -48,10 +47,10 @@
             <div class="mainscreenpersonlistmap">
                 <div class="mainscreenpersonlistmapcenter">
                     <div class="mainscreenpersonlist" id="mspl">
-                        <div class="personlist" onclick="updateFun()"><span>Anna Ahrens</span></div>
-                        <div class="personlist" onclick="updateFun()"><span>Berta Behmann</span></div>
-                        <div class="personlist" onclick="updateFun()"><span>Clemens Cling</span></div>
-                        <div class="personlist" onclick="updateFun()"><span>Daniel Düsentrieb</span></div>
+<!--                        <div class="personlist" onclick="updateFun()"><span>Anna Ahrens</span></div>-->
+<!--                        <div class="personlist" onclick="updateFun()"><span>Berta Behmann</span></div>-->
+<!--                        <div class="personlist" onclick="updateFun()"><span>Clemens Cling</span></div>-->
+<!--                        <div class="personlist" onclick="updateFun()"><span>Daniel Düsentrieb</span></div>-->
                     </div>
                     <div class="mainscreenmap">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d310846.41993748787!2d13.144566210627334!3d52.506513300248656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin!5e0!3m2!1sde!2sde!4v1649931438566!5m2!1sde!2sde"
@@ -88,15 +87,15 @@
 
     <form id="updateform" onsubmit="return false">
         <div class="updatedeleteform">
-            <label>First name <input value="Max"/> </label>
-            <label>Last name <input value="Mustermann"/></label>
-            <label>Street & Number <input value="Musterstraße 1"/></label>
-            <label>ZIP <input value="12345"/></label>
-            <label>City <input value="Musterstadt"/></label>
-            <label>Country <input value="Deutschland"/></label>
-            <label>Phone <input value="030123456789"/></label>
-            <label>Date of Birth <input type="date" value="2002-04-01"/></label>
-            <label>public <input type="checkbox"></label>
+            <label>First name <input id="inputfirstname" value="Max"/> </label>
+            <label>Last name <input id="inputlastname" value="Mustermann"/></label>
+            <label>Street & Number <input id="inputstreetnr" value="Musterstraße 1"/></label>
+            <label>ZIP <input id="inputzip" value="12345"/></label>
+            <label>City <input id="inputcity" value="Musterstadt"/></label>
+            <label>Country <input id="inputcountry" value="Deutschland"/></label>
+            <label>Phone <input id="inputphone" value="030123456789"/></label>
+            <label>Date of Birth <input id="inputdob" type="date" value="2002-04-01"/></label>
+            <label>public <input id="inputvisibility" type="checkbox"></label>
             <div class="updatedeletecontainer">
                 <div class="updatedeleteitem">
                     <button class="btns">Update</button>
