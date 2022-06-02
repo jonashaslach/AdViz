@@ -184,7 +184,7 @@ function AddNew() {
     newPerson.classList.add("personlist");
     newPerson.innerHTML += "<span>" + inputFullname + "</span>"
     document.getElementById("mspl").appendChild(newPerson);
-    newPerson.addEventListener("click", updateFun);
+    //newPerson.addEventListener("click", updateFun);
 }
 
 
